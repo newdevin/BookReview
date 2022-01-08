@@ -104,9 +104,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "FluentAssert": {
+            "FluentAssertions": {
               "target": "Package",
-              "version": "[1.0.0.11, )"
+              "version": "[6.3.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

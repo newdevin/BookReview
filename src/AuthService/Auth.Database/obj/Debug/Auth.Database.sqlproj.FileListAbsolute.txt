@@ -2,9 +2,5 @@ C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\bin\Debug\Au
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\bin\Debug\Auth.Database.dll
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\bin\Debug\Auth.Database.pdb
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Auth.Database.sqlproj.AssemblyReference.cache
-C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Model.xml
-C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\refactor.xml
-C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\postdeploy.sql
-C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\predeploy.sql
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Auth.Database.dll
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Auth.Database.pdb

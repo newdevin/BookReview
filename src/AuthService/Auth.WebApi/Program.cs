@@ -2,6 +2,7 @@ using Auth.Repository;
 using Auth.Service;
 using Auth.Service.Commands;
 using Auth.Service.Repositories;
+using Auth.WebApi;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services
     .AddTransient<IMediator, Mediator>()
     .AddTransient<IUserRepository, UserRepository>()
     .AddTransient<IEncryptor, Encryptor>()
+    .AddTransient<IPasswordValidator, PasswordValidator>()
     .AddTransient<IAuthConfiguration, AuthConfiguration>();
     
 builder.Services.AddControllers();
@@ -35,3 +37,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

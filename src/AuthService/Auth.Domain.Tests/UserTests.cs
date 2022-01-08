@@ -11,7 +11,7 @@ namespace Auth.Domain.Tests
     public class UserTests
     {
         [Fact]
-        public void UpadateUser_ShouldUpdateTheUserCorrectly()
+        public void UpdateUser_ShouldUpdateTheUserCorrectly()
         {
             User user = new("someone@abc.com", "salt", "hash", DateTime.UtcNow, DateTime.UtcNow);
             var newHash = "new hash";

@@ -3,6 +3,7 @@ using Auth.Service;
 using Auth.Service.Repositories;
 using System.Data.SqlClient;
 using Dapper;
+using Auth.Repository.Entities;
 
 namespace Auth.Repository
 {
@@ -21,7 +22,9 @@ namespace Auth.Repository
             
             using var connection = new SqlConnection(_connectionString);
             
-            return await connection.QueryFirstOrDefaultAsync<User>(query, new {Email = email});
+            var userEntity = await connection.QueryFirstOrDefaultAsync<UserEntity>(query, new {Email = email});
+
+            return new User(userEntity.Email, userEntity.PasswordSalt, userEntity.PasswordHash, userEntity.CreatedDateTime, userEntity.LastModifiedDateTime);
 
         }
 
