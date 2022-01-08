@@ -1,0 +1,166 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MediatR/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Contracts.dll": {}
+        }
+      },
+      "Auth.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Auth.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Domain.dll": {}
+        }
+      },
+      "Auth.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Auth.Domain": "1.0.0",
+          "MediatR": "10.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Auth.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MediatR/10.0.0": {
+      "sha512": "4/oUEQEtDbJ9OIwsHux0sNsU9+/GRWFTrsDNXnt18JyPnZQyIisN7CmrieXbzJeG7oDSoY2SOw8frOz/mB6rrA==",
+      "type": "package",
+      "path": "mediatr/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.10.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.0": {
+      "sha512": "9IyK5yfH/ASk97FNs1cigFdAbXPbBCyoophoO0XXvua18EqHfrNWmRfy+ry2n5O0rNAwIVgI4KpDwDXO2M8VYg==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.Contracts.dll",
+        "lib/netstandard2.1/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.0.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
+    "Auth.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Auth.Domain/Auth.Domain.csproj",
+      "msbuildProject": "../Auth.Domain/Auth.Domain.csproj"
+    },
+    "Auth.Service/1.0.0": {
+      "type": "project",
+      "path": "../Auth.Service/Auth.Service.csproj",
+      "msbuildProject": "../Auth.Service/Auth.Service.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Auth.Domain >= 1.0.0",
+      "Auth.Service >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Dev\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Console\\Auth.Console.csproj",
+      "projectName": "Auth.Console",
+      "projectPath": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Console\\Auth.Console.csproj",
+      "packagesPath": "C:\\Users\\Dev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Console\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Domain\\Auth.Domain.csproj": {
+              "projectPath": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Domain\\Auth.Domain.csproj"
+            },
+            "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Service\\Auth.Service.csproj": {
+              "projectPath": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Service\\Auth.Service.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Auth.Console/1.0.0": {
+        "dependencies": {
+          "Auth.Domain": "1.0.0",
+          "Auth.Service": "1.0.0"
+        },
+        "runtime": {
+          "Auth.Console.dll": {}
+        }
+      },
+      "MediatR/10.0.0": {
+        "dependencies": {
+          "MediatR.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "MediatR.Contracts/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Auth.Domain/1.0.0": {
+        "runtime": {
+          "Auth.Domain.dll": {}
+        }
+      },
+      "Auth.Service/1.0.0": {
+        "dependencies": {
+          "Auth.Domain": "1.0.0",
+          "MediatR": "10.0.0"
+        },
+        "runtime": {
+          "Auth.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Auth.Console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MediatR/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4/oUEQEtDbJ9OIwsHux0sNsU9+/GRWFTrsDNXnt18JyPnZQyIisN7CmrieXbzJeG7oDSoY2SOw8frOz/mB6rrA==",
+      "path": "mediatr/10.0.0",
+      "hashPath": "mediatr.10.0.0.nupkg.sha512"
+    },
+    "MediatR.Contracts/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9IyK5yfH/ASk97FNs1cigFdAbXPbBCyoophoO0XXvua18EqHfrNWmRfy+ry2n5O0rNAwIVgI4KpDwDXO2M8VYg==",
+      "path": "mediatr.contracts/1.0.0",
+      "hashPath": "mediatr.contracts.1.0.0.nupkg.sha512"
+    },
+    "Auth.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Auth.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
