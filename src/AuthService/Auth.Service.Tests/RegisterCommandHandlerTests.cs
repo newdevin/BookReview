@@ -51,7 +51,7 @@ namespace Auth.Service.Tests
 
             result.Should().NotBeNull();
             result.Value.Should().BeNull();
-            result.ErrorMessages.Contains(RegisterCommandHandler.User_Exists);
+            result.ErrorMessages.Should().Contain(RegisterCommandHandler.User_Exists);
 
         }
 
