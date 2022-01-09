@@ -418,3 +418,4 @@ C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.IntegrationTests\obj\
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.IntegrationTests\obj\Debug\net6.0\ref\Auth.IntegrationTests.dll
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.IntegrationTests\obj\Debug\net6.0\Auth.IntegrationTests.pdb
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.IntegrationTests\obj\Debug\net6.0\Auth.IntegrationTests.genruntimeconfig.cache
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.IntegrationTests\bin\Debug\net6.0\Dapper.Contrib.dll

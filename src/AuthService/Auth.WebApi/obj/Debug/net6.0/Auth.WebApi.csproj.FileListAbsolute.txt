@@ -41,3 +41,4 @@ C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6.0\ref\Auth.WebApi.dll
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6.0\Auth.WebApi.pdb
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6.0\Auth.WebApi.genruntimeconfig.cache
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Dapper.Contrib.dll

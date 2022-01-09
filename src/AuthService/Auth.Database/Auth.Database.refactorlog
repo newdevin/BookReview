@@ -14,4 +14,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PasswordSalt" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8c075cff-24b1-4426-b31c-37f72d90dd4a" ChangeDateTime="01/09/2022 13:05:12">
+    <Property Name="ElementName" Value="[dbo].[User].[CreatedDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[CreatedDateTimeUtc]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="23766511-00d6-432d-a069-2ea5d09f309e" ChangeDateTime="01/09/2022 13:05:28">
+    <Property Name="ElementName" Value="[dbo].[User].[LastModifiedDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[LastModifiedDateTimeUtc]" />
+  </Operation>
 </Operations>

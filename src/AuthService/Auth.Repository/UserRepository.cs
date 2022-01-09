@@ -18,16 +18,16 @@ namespace Auth.Repository
 
         public async Task<User?> Get(string email)
         {
-            var query = "SELECT Email, PasswordHash, PasswordSalt, CreatedDateTime, LastModifiedDateTime FROM [dbo].[User] WHERE Email = @Email";
+            var query = "SELECT Email, PasswordHash, PasswordSalt, CreatedDateTimeUtc, LastModifiedDateTimeUtc FROM [dbo].[User] WHERE Email = @Email";
             using var connection = new SqlConnection(_connectionString);
             var userEntity = await connection.QueryFirstOrDefaultAsync<UserEntity>(query, new {Email = email});
 
-            return userEntity is null  ? default : new User(userEntity.Email, userEntity.PasswordSalt, userEntity.PasswordHash, userEntity.CreatedDateTime, userEntity.LastModifiedDateTime);
+            return userEntity is null  ? default : new User(userEntity.Email, userEntity.PasswordSalt, userEntity.PasswordHash, userEntity.CreatedDateTimeUtc, userEntity.LastModifiedDateTimeUtc);
         }
 
         public async Task<User> InsertUser(User user)
         {
-            var command = "INSERT INTO [dbo].[User] (Email, PasswordSalt, PasswordHash, CreatedDateTime, LastModifiedDateTime)" +
+            var command = "INSERT INTO [dbo].[User] (Email, PasswordSalt, PasswordHash, CreatedDateTimeUtc, LastModifiedDateTimeUtc)" +
                 " VALUES(@Email, @PasswordSalt, @PasswordHash, @CreatedDateTimeUtc, @LastModifiedDateTimeUtc)";
             using var connection = new SqlConnection(_connectionString);
             await connection.ExecuteAsync(command, user);
@@ -37,7 +37,7 @@ namespace Auth.Repository
 
         public async Task Update(User user)
         {
-            var command = "UPDATE [dbo].[User] SET PasswordSalt = @PasswordSalt, PasswordHash = @PasswordHash, CreatedDateTime = @CreatedDateTimeUtc, LastModifiedDateTime= @LastModifiedDateTimeUtc" +
+            var command = "UPDATE [dbo].[User] SET PasswordSalt = @PasswordSalt, PasswordHash = @PasswordHash, CreatedDateTimeUtc = @CreatedDateTimeUtc, LastModifiedDateTimeUtc= @LastModifiedDateTimeUtc" +
                 " WHERE Email = @Email";
 
             using var connection = new SqlConnection(_connectionString);
