@@ -57,4 +57,5 @@ namespace Auth.Service.Tests
             result.Should().BeEmpty();
         }
     }
+
 }

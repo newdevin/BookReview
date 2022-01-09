@@ -15,33 +15,26 @@ namespace Auth.Service.Commands
         private readonly IUserRepository _userRepository;
         private readonly IEncryptor _encryptor;
         private readonly IPasswordValidator _passwordValidator;
-        
+        private readonly IEmailValidator _emailValidator;
         public const string Email_Is_Invalid = "Email is invalid";
-
         public const string User_Exists = "Email already exists";
         public const string Success = "User created";
 
-
         private readonly int _minimumPasswordLength = 8;
 
-        public RegisterCommandHandler(IAuthConfiguration authConfiguration, IUserRepository userRepository, IEncryptor encryptor, IPasswordValidator passwordValidator)
+        public RegisterCommandHandler(IAuthConfiguration authConfiguration, IUserRepository userRepository, IEncryptor encryptor, IPasswordValidator passwordValidator, IEmailValidator emailValidator)
         {
             _authConfiguration = authConfiguration;
             _userRepository = userRepository;
             _encryptor = encryptor;
             _passwordValidator = passwordValidator;
+            _emailValidator = emailValidator;
             _minimumPasswordLength = _authConfiguration.GetMinimumPasswordLength() ?? 8;
         }
 
         public async Task<Result<User>> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
-            var errorMessages = _passwordValidator.Validate(request.Password, request.RepeatPassword, _minimumPasswordLength).ToList();
-            
-            var emailValidationMessage = ValidateEmail(request.Email);
-
-            if (emailValidationMessage != null)
-                errorMessages.Add(emailValidationMessage);
-
+            var errorMessages = Validate(request);
             if (errorMessages.Any())
                 return new Result<User>(default, default, errorMessages);
 
@@ -60,24 +53,17 @@ namespace Auth.Service.Commands
             return new Result<User>(user, Success, errorMessages);
         }
 
-        private string? ValidateEmail(string email)
+        public List<string> Validate(RegisterCommand request)
         {
-            var trimmedEmail = email.Trim();
+            var errorMessages = _passwordValidator.Validate(request.Password, request.RepeatPassword, _minimumPasswordLength).ToList();
 
-            if (trimmedEmail.EndsWith("."))
-                return Email_Is_Invalid;
+            var emailValidationMessage = _emailValidator.Validate(request.Email) ? null : Email_Is_Invalid;
 
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-            }
-            catch
-            {
-                return Email_Is_Invalid;
-            }
-            return null;
+            if (emailValidationMessage != null)
+                errorMessages.Add(emailValidationMessage);
+
+            return errorMessages;
         }
-
-       
+                
     }
 }

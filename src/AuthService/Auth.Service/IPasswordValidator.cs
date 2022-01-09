@@ -10,4 +10,5 @@ namespace Auth.Service
     {
         IEnumerable<string> Validate(string password, string repeatPassword, int minPasswordLength);
     }
+       
 }

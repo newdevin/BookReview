@@ -1,0 +1,6 @@
+{
+  "Auth.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Domain",
+  "Auth.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Repository",
+  "Auth.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.Service",
+  "Auth.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\AuthService\\src\\AuthService\\Auth.WebApi"
+}
