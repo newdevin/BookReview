@@ -13,7 +13,8 @@ builder.Services
     .AddTransient<IUserRepository, UserRepository>()
     .AddTransient<IEncryptor, Encryptor>()
     .AddTransient<IPasswordValidator, PasswordValidator>()
-    .AddTransient<IAuthConfiguration, AuthConfiguration>();
+    .AddTransient<IAuthConfiguration, AuthConfiguration>()
+    .AddTransient<IEmailValidator, EmailValidator>();
     
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

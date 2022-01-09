@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 
 namespace Auth.Service.Commands
 {
-    public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Result<User>>
+    public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Result<UserInfo>>
     {
         private readonly IAuthConfiguration _authConfiguration;
         private readonly IUserRepository _userRepository;
         private readonly IEncryptor _encryptor;
         private readonly IPasswordValidator _passwordValidator;
         private readonly IEmailValidator _emailValidator;
+
         public const string Email_Is_Invalid = "Email is invalid";
         public const string User_Exists = "Email already exists";
         public const string Success = "User created";
@@ -32,17 +33,17 @@ namespace Auth.Service.Commands
             _minimumPasswordLength = _authConfiguration.GetMinimumPasswordLength() ?? 8;
         }
 
-        public async Task<Result<User>> Handle(RegisterCommand request, CancellationToken cancellationToken)
+        public async Task<Result<UserInfo>> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
             var errorMessages = Validate(request);
             if (errorMessages.Any())
-                return new Result<User>(default, default, errorMessages);
+                return new Result<UserInfo>(default, default, errorMessages);
 
             User user = await _userRepository.Get(request.Email);
             if (user != null)
             {
                 errorMessages.Add(User_Exists);
-                return new Result<User>(default, default, errorMessages);
+                return new Result<UserInfo>(default, default, errorMessages);
             }
 
             var salt = _encryptor.GenerateSalt();
@@ -50,7 +51,7 @@ namespace Auth.Service.Commands
 
             user = await _userRepository.InsertUser(new User(request.Email, salt, hash, DateTime.UtcNow, DateTime.UtcNow));
 
-            return new Result<User>(user, Success, errorMessages);
+            return new Result<UserInfo>(new UserInfo(user.Email), Success, errorMessages);
         }
 
         public List<string> Validate(RegisterCommand request)

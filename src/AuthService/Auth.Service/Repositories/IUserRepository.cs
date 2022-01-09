@@ -10,6 +10,7 @@ namespace Auth.Service.Repositories
     public interface IUserRepository
     {
         Task<User> InsertUser(User user);
-        Task<User> Get(string email);
+        Task<User?> Get(string email);
+        Task Update(User user);
     }
 }

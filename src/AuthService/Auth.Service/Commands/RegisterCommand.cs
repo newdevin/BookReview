@@ -6,8 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Auth.Service.Commands
-{
-    public record RegisterCommand (string Email, string Password, string RepeatPassword) : IRequest<Result<User>>;
-    
-}
+namespace Auth.Service.Commands;
+
+public record RegisterCommand(string Email, string Password, string RepeatPassword) : IRequest<Result<UserInfo>>;

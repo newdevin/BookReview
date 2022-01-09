@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Auth.Service
 {
-    public record Result<T> (T? Value, string? Message, IEnumerable<string> ErrorMessages);
+    public record UserInfo(string Email);
     
 }
