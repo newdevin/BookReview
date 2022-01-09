@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[RefreshToken]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [UserId] INT NOT NULL FOREIGN KEY REFERENCES [dbo].[User](Id),
+    [Token] NVARCHAR(50) NOT NULL
+)

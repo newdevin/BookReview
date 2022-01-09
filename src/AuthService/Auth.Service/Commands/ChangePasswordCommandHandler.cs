@@ -50,7 +50,7 @@ public class ChangePasswordCommandHandler : IRequestHandler<ChangePasswordComman
 
         await UpdateUser(request, user);
 
-        return new Result<UserInfo>(new UserInfo(request.Email), Password_Updated, Enumerable.Empty<string>());
+        return new Result<UserInfo>(new UserInfo(request.Email, user.FirstName, user.LastName), Password_Updated, Enumerable.Empty<string>());
     }
 
     private async Task UpdateUser(ChangePasswordCommand request, User user)

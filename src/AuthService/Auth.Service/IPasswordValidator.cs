@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Auth.Service
+namespace Auth.Service;
+
+public interface IPasswordValidator
 {
-    public interface IPasswordValidator
-    {
-        IEnumerable<string> Validate(string password, string repeatPassword, int minPasswordLength);
-    }
-       
+    IEnumerable<string> Validate(string password, string repeatPassword, int minPasswordLength);
 }

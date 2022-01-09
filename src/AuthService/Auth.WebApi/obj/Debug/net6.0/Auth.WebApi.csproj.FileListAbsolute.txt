@@ -41,4 +41,10 @@ C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6.0\ref\Auth.WebApi.dll
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6.0\Auth.WebApi.pdb
 C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\obj\Debug\net6.0\Auth.WebApi.genruntimeconfig.cache
-C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Dapper.Contrib.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.WebApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

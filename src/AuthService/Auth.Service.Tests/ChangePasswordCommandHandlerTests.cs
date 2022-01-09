@@ -57,7 +57,7 @@ namespace Auth.Service.Tests
         public async Task Handle_Should_NotChangePasswordIfOriginalPasswordDoesNotMatch()
         {
             ChangePasswordCommand command = GetChangePasswordCommandHandlerObject();
-            var user = new User("someone@abc.com", "salt", "password", DateTime.UtcNow, DateTime.UtcNow);
+            var user = new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow);
 
             _passwordValidatorMock.Setup(m => m.Validate(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()))
                 .Returns(Enumerable.Empty<string>());
@@ -82,7 +82,7 @@ namespace Auth.Service.Tests
         public async Task Handle_Should_ChangePassword()
         {
             ChangePasswordCommand command = GetChangePasswordCommandHandlerObject();
-            var user = new User("someone@abc.com", "salt", "password", DateTime.UtcNow, DateTime.UtcNow);
+            var user = new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow);
             var newHash = "new hash";
             var newSalt = "new salt";
             _passwordValidatorMock.Setup(m => m.Validate(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()))
@@ -106,7 +106,7 @@ namespace Auth.Service.Tests
             result.ErrorMessages.Should().BeEmpty();
             result.Value.Should().NotBeNull();
             result.Message.Should().Be(ChangePasswordCommandHandler.Password_Updated);
-            
+
         }
 
 

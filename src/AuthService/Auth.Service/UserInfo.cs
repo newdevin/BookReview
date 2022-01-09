@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Auth.Service
 {
-    public record UserInfo(string Email);
+    public record UserInfo(string Email, string FirstName, string LastName);
     
 }

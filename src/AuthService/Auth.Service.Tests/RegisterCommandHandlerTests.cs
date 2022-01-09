@@ -43,7 +43,7 @@ namespace Auth.Service.Tests
                 .Returns(true);
 
             _userRepositoryMock.Setup(m => m.Get(It.IsAny<string>()))
-                .ReturnsAsync(new User("someone@abc.com", "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
+                .ReturnsAsync(new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
 
             var command = GetRegisterCommandObject();
             
@@ -75,8 +75,8 @@ namespace Auth.Service.Tests
 
             _userRepositoryMock.Setup(m => m.Get(It.IsAny<string>()))
                 .ReturnsAsync((User?)null);
-            _userRepositoryMock.Setup(m => m.InsertUser(It.IsAny<User>()))
-               .ReturnsAsync(new User("someone@abc.com", "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
+            _userRepositoryMock.Setup(m => m.Insert(It.IsAny<User>()))
+               .ReturnsAsync(new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
 
             var result = await _handler.Handle(command, GetCancellationToken());
 
@@ -88,7 +88,7 @@ namespace Auth.Service.Tests
 
         private static RegisterCommand GetRegisterCommandObject()
         {
-            return new("someone@abc.com", "abc", "abc");
+            return new("someone@abc.com", "firstname","lastname", "abc", "abc");
         }
     }
 

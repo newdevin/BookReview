@@ -49,9 +49,9 @@ namespace Auth.Service.Commands
             var salt = _encryptor.GenerateSalt();
             var hash = _encryptor.ComputeHash(request.Password, salt);
 
-            user = await _userRepository.InsertUser(new User(request.Email, salt, hash, DateTime.UtcNow, DateTime.UtcNow));
+            user = await _userRepository.Insert(new User(request.Email, request.FirstName, request.LastName, salt, hash, DateTime.UtcNow, DateTime.UtcNow));
 
-            return new Result<UserInfo>(new UserInfo(user.Email), Success, errorMessages);
+            return new Result<UserInfo>(new UserInfo(user.Email, user.FirstName, user.LastName), Success, errorMessages);
         }
 
         public List<string> Validate(RegisterCommand request)
@@ -65,6 +65,6 @@ namespace Auth.Service.Commands
 
             return errorMessages;
         }
-                
+
     }
 }

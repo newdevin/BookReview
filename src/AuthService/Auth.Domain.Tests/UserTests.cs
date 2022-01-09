@@ -11,9 +11,9 @@ namespace Auth.Domain.Tests
     public class UserTests
     {
         [Fact]
-        public void UpdateUser_ShouldUpdateTheUserCorrectly()
+        public void UpdatePassword_ShouldUpdateTheUserCorrectly()
         {
-            User user = new("someone@abc.com", "salt", "hash", DateTime.UtcNow, DateTime.UtcNow);
+            User user = new("someone@abc.com", "first name", "last name", "salt", "hash", DateTime.UtcNow, DateTime.UtcNow);
             var newHash = "new hash";
             var newSalt = "new salt";
             var originalLastModifiedDateTimeInUtc = user.LastModifiedDateTimeUtc;
@@ -24,8 +24,22 @@ namespace Auth.Domain.Tests
             result.PasswordSalt.Should().Be(newSalt);
             result.PasswordHash.Should().Be(newHash);
             result.LastModifiedDateTimeUtc.Should().NotBe(originalLastModifiedDateTimeInUtc);
+        }
 
+        [Fact]
+        public void UpdateName_ShouldUpdateTheUserCorrectly()
+        {
+            User user = new("someone@abc.com", "first name", "last name", "salt", "hash", DateTime.UtcNow, DateTime.UtcNow);
+            var newFirstName = "new first name";
+            var newLastName = "new last name";
+            var originalLastModifiedDateTimeInUtc = user.LastModifiedDateTimeUtc;
 
+            var result = user.UpdateName(newFirstName, newLastName);
+
+            result.Should().NotBeNull();
+            result.FirstName.Should().Be(newFirstName);
+            result.LastName.Should().Be(newLastName);
+            result.LastModifiedDateTimeUtc.Should().NotBe(originalLastModifiedDateTimeInUtc);
         }
     }
 }

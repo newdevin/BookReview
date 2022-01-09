@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
-  <Operation Name="Rename Refactor" Key="8879281d-9a56-4339-ab98-1387f996fdc1" ChangeDateTime="01/08/2022 12:25:09">
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="8879281d-9a56-4339-ab98-1387f996fdc1" ChangeDateTime="01/08/2022 12:25:09" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[PasswordHash]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Salt" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="b2675085-e28a-4488-82f7-097407a0113d" ChangeDateTime="01/08/2022 12:25:16">
+  <Operation Name="Rename Refactor" Key="b2675085-e28a-4488-82f7-097407a0113d" ChangeDateTime="01/08/2022 12:25:16" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[Salt]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PasswordSalt" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="8c075cff-24b1-4426-b31c-37f72d90dd4a" ChangeDateTime="01/09/2022 13:05:12">
+  <Operation Name="Rename Refactor" Key="8c075cff-24b1-4426-b31c-37f72d90dd4a" ChangeDateTime="01/09/2022 13:05:12" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[CreatedDateTime]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[CreatedDateTimeUtc]" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="23766511-00d6-432d-a069-2ea5d09f309e" ChangeDateTime="01/09/2022 13:05:28">
+  <Operation Name="Rename Refactor" Key="23766511-00d6-432d-a069-2ea5d09f309e" ChangeDateTime="01/09/2022 13:05:28" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[LastModifiedDateTime]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[LastModifiedDateTimeUtc]" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="5b795ef6-7561-42be-bc98-8f17c44c00bd" ChangeDateTime="01/09/2022 19:32:55">
+  <Operation Name="Rename Refactor" Key="5b795ef6-7561-42be-bc98-8f17c44c00bd" ChangeDateTime="01/09/2022 19:32:55" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[RefreshToken].[token]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[RefreshToken]" />

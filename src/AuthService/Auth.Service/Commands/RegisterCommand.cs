@@ -8,4 +8,4 @@ using System.Threading.Tasks;
 
 namespace Auth.Service.Commands;
 
-public record RegisterCommand(string Email, string Password, string RepeatPassword) : IRequest<Result<UserInfo>>;
+public record RegisterCommand(string Email, string FirstName,string LastName, string Password, string RepeatPassword) : IRequest<Result<UserInfo>>;
