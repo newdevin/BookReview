@@ -4,6 +4,7 @@
     [Email] NVARCHAR(320) NOT NULL UNIQUE, 
     [FirstName] NVARCHAR(128) NOT NULL, 
     [LastName] NVARCHAR(128) NOT NULL,
+    [EmailVerified] BIT NOT NULL DEFAULT 0,
     [PasswordSalt] NVARCHAR(512) NOT NULL, 
     [PasswordHash] NVARCHAR(512) NOT NULL, 
     [CreatedDateTimeUtc] DATETIME2 NOT NULL, 

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[EmailVerification]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[UserId] INT NOT NULL FOREIGN KEY REFERENCES dbo.[User](Id),
+	[Code] NVARCHAR(50) NOT NULL
+)

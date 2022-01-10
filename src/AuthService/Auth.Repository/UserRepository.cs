@@ -16,19 +16,19 @@ namespace Auth.Repository
             _connectionString = authConfiguration.GetConnectionString();
         }
 
-        public async Task<User?> Get(string email)
+        public async Task<User> Get(string email)
         {
-            var query = "SELECT Email,  FirstName, LastName,PasswordHash, PasswordSalt, CreatedDateTimeUtc, LastModifiedDateTimeUtc FROM [dbo].[User] WHERE Email = @Email";
+            var query = "SELECT Email, FirstName, LastName, EmailVerified, PasswordHash, PasswordSalt, CreatedDateTimeUtc, LastModifiedDateTimeUtc FROM [dbo].[User] WHERE Email = @Email";
             using var connection = new SqlConnection(_connectionString);
             var userEntity = await connection.QueryFirstOrDefaultAsync<UserEntity>(query, new { Email = email });
 
-            return userEntity is null ? default : new User(userEntity.Email, userEntity.FirstName, userEntity.LastName, userEntity.PasswordSalt, userEntity.PasswordHash, userEntity.CreatedDateTimeUtc, userEntity.LastModifiedDateTimeUtc);
+            return userEntity is null ? default : new User(userEntity.Email, userEntity.FirstName, userEntity.LastName, userEntity.EmailVerified, userEntity.PasswordSalt, userEntity.PasswordHash, userEntity.CreatedDateTimeUtc, userEntity.LastModifiedDateTimeUtc);
         }
 
         public async Task<User> Insert(User user)
         {
-            var command = "INSERT INTO [dbo].[User] (Email, FirstName, LastName, PasswordSalt, PasswordHash, CreatedDateTimeUtc, LastModifiedDateTimeUtc)" +
-                " VALUES(@Email,@FirstName,@LastName, @PasswordSalt, @PasswordHash, @CreatedDateTimeUtc, @LastModifiedDateTimeUtc)";
+            var command = "INSERT INTO [dbo].[User] (Email, FirstName, LastName, EmailVerified, PasswordSalt, PasswordHash, CreatedDateTimeUtc, LastModifiedDateTimeUtc)" +
+                " VALUES(@Email, @FirstName, @LastName, @EmailVerified ,@PasswordSalt, @PasswordHash, @CreatedDateTimeUtc, @LastModifiedDateTimeUtc)";
             using var connection = new SqlConnection(_connectionString);
             await connection.ExecuteAsync(command, user);
 
@@ -37,7 +37,7 @@ namespace Auth.Repository
 
         public async Task Update(User user)
         {
-            var command = "UPDATE [dbo].[User] SET FirstName = @FirstName, LastName=@LastName, PasswordSalt = @PasswordSalt, PasswordHash = @PasswordHash, CreatedDateTimeUtc = @CreatedDateTimeUtc, LastModifiedDateTimeUtc= @LastModifiedDateTimeUtc" +
+            var command = "UPDATE [dbo].[User] SET FirstName = @FirstName, LastName=@LastName, EmailVerified = @EmailVerified, PasswordSalt = @PasswordSalt, PasswordHash = @PasswordHash, CreatedDateTimeUtc = @CreatedDateTimeUtc, LastModifiedDateTimeUtc= @LastModifiedDateTimeUtc" +
                 " WHERE Email = @Email";
 
             using var connection = new SqlConnection(_connectionString);

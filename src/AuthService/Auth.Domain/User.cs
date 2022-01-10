@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Auth.Domain
 {
-    public record User(string Email, string FirstName, string LastName, string PasswordSalt, string PasswordHash, DateTime CreatedDateTimeUtc, DateTime LastModifiedDateTimeUtc)
+    public record User(string Email, string FirstName, string LastName, bool EmailVerified, string PasswordSalt, string PasswordHash, DateTime CreatedDateTimeUtc, DateTime LastModifiedDateTimeUtc)
     {
         public User UpdatePassword(string passwordSalt, string passwordHash)
         {
@@ -16,6 +16,11 @@ namespace Auth.Domain
         public User UpdateName(string FirstName, string LastName)
         {
             return this with { FirstName = FirstName, LastName = LastName, LastModifiedDateTimeUtc = DateTime.UtcNow };
+        }
+
+        public User VerifyEmail(bool verified)
+        {
+            return this with { EmailVerified = verified, LastModifiedDateTimeUtc = DateTime.UtcNow };
         }
     }
 }

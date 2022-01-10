@@ -13,6 +13,7 @@ namespace Auth.Service.Commands
         public const string Email_Or_Password_Not_Correct = "The email and password supplied is not correct";
         public const string Password_Is_Missing = "Password is missing";
         public const string Email_Is_Invalid = "Email is invalid";
+        public const string Email_Is_Unverified = "Email is not verified";
 
         public LoginCommandHandler(IUserRepository userRepository, IEncryptor encryptor, IEmailValidator emailValidator, 
             ITokenService tokenService, IRefreshTokenRepository refreshTokenRepository)
@@ -34,6 +35,12 @@ namespace Auth.Service.Commands
             if(user == null)
             {
                 errors.Add(Email_Or_Password_Not_Correct);
+                return new Result<UserToken>(default, default, errors);
+            }
+
+            if(user.EmailVerified == false)
+            {
+                errors.Add(Email_Is_Unverified);
                 return new Result<UserToken>(default, default, errors);
             }
 

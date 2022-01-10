@@ -21,7 +21,7 @@ namespace Auth.Service.Tests
         private readonly Mock<IRefreshTokenRepository> _refreshTokenRepositoryMock;
         private readonly Mock<IUserRepository> _userRepositoryMock;
 
-        LogoutCommandHandler _handler;
+        readonly LogoutCommandHandler _handler;
 
         public LogoutCommandHandlerTests()
         {
@@ -50,7 +50,7 @@ namespace Auth.Service.Tests
         [Fact]
         public async Task Handle_Should_Succeed()
         {
-            var user = new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow);
+            var user = new User("someone@abc.com", "firstname", "lastname", false, "salt", "password", DateTime.UtcNow, DateTime.UtcNow);
             var command = new LogoutCommand("someone@abc.com");
 
             _userRepositoryMock.Setup(m => m.Get(It.IsAny<string>()))

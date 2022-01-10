@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[User]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[RefreshToken] (Foreign Key)
+     Table rebuild
+       [dbo].[User] (Table)
+     Create
+       [dbo].[EmailVerification] (Table)
+       Foreign Key: unnamed constraint on [dbo].[EmailVerification] (Foreign Key)
+
+** Supporting actions
+     Create
+       Foreign Key: unnamed constraint on [dbo].[RefreshToken] (Foreign Key)

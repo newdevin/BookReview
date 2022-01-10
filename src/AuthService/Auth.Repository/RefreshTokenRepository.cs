@@ -32,13 +32,13 @@ namespace Auth.Repository
 
         public async Task Insert(string email, string refreshToken)
         {
-            var query = "DECLARE @UserId INT;" +
+            var command = "DECLARE @UserId INT;" +
                 "SELECT @UserId = Id FROM dbo.[User] WHERE Email = @Email;" +
                 "DELETE FROM dbo.RefreshToken WHERE UserId = @UserId ;" +
                 "INSERT INTO dbo.RefreshToken (UserId, Token) VALUES (@UserId, @Token)";
 
             using var connection = new SqlConnection(_connectionString);
-            await connection.ExecuteAsync(query, new { Email = email, Token = refreshToken });
+            await connection.ExecuteAsync(command, new { Email = email, Token = refreshToken });
         }
     }
 

@@ -19,6 +19,7 @@ namespace Auth.Service.Tests
         private readonly Mock<IEncryptor> _encryptorMock;
         private readonly Mock<IPasswordValidator> _passwordValidatorMock;
         private readonly Mock<IEmailValidator> _emailValidatorMock;
+        private readonly Mock<IEmailVerificationRepository> _emailVerificationRepositoryMock;
 
         private readonly RegisterCommandHandler _handler;
 
@@ -29,7 +30,8 @@ namespace Auth.Service.Tests
             _encryptorMock = new Mock<IEncryptor>();
             _passwordValidatorMock = new Mock<IPasswordValidator>();
             _emailValidatorMock = new Mock<IEmailValidator>();
-            _handler = new RegisterCommandHandler(_authConfigurationMock.Object, _userRepositoryMock.Object, _encryptorMock.Object, _passwordValidatorMock.Object,_emailValidatorMock.Object);
+            _emailVerificationRepositoryMock = new Mock<IEmailVerificationRepository>();
+            _handler = new RegisterCommandHandler(_authConfigurationMock.Object, _userRepositoryMock.Object, _encryptorMock.Object, _passwordValidatorMock.Object,_emailValidatorMock.Object, _emailVerificationRepositoryMock.Object);
         }
 
 
@@ -43,7 +45,7 @@ namespace Auth.Service.Tests
                 .Returns(true);
 
             _userRepositoryMock.Setup(m => m.Get(It.IsAny<string>()))
-                .ReturnsAsync(new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
+                .ReturnsAsync(new User("someone@abc.com", "firstname", "lastname", false, "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
 
             var command = GetRegisterCommandObject();
             
@@ -76,7 +78,7 @@ namespace Auth.Service.Tests
             _userRepositoryMock.Setup(m => m.Get(It.IsAny<string>()))
                 .ReturnsAsync((User?)null);
             _userRepositoryMock.Setup(m => m.Insert(It.IsAny<User>()))
-               .ReturnsAsync(new User("someone@abc.com", "firstname", "lastname", "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
+               .ReturnsAsync(new User("someone@abc.com", "firstname", "lastname", false, "salt", "password", DateTime.UtcNow, DateTime.UtcNow));
 
             var result = await _handler.Handle(command, GetCancellationToken());
 

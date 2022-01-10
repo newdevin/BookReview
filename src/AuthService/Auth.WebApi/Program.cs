@@ -20,6 +20,7 @@ builder.Services
     .AddTransient<IPasswordValidator, PasswordValidator>()
     .AddTransient<ITokenService, TokenService>()
     .AddTransient<IAuthConfiguration, AuthConfiguration>()
+    .AddTransient<IEmailVerificationRepository, EmailVerificationRepository>()
     .AddTransient<IEmailValidator, EmailValidator>()
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
