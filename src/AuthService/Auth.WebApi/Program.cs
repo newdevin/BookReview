@@ -5,6 +5,7 @@ using Auth.Service.Repositories;
 using Auth.WebApi;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -46,6 +47,8 @@ builder.Services
 
 builder.Services.AddOptions();
 builder.Services.Configure<JwtInfo>(builder.Configuration.GetSection("Jwt"));
+
+builder.Services.AddAuthorization(options => options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build());
     
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

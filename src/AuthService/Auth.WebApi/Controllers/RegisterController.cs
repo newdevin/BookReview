@@ -9,7 +9,6 @@ namespace Auth.WebApi.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-[Authorize]
 public class RegisterController : ControllerBase
 {
     private readonly IMediator _mediatr;
