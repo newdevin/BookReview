@@ -10,9 +10,9 @@ namespace Auth.Service.Commands
         private readonly IEmailValidator _emailValidator;
         private readonly ITokenService _tokenService;
         private readonly IRefreshTokenRepository _refreshTokenRepository;
-        private const string Email_Or_Password_Not_Correct = "The email and password supplied is not correct";
-        private const string Password_Is_Missing = "Password is missing";
-        private const string Email_Is_Invalid = "Email is invalid";
+        public const string Email_Or_Password_Not_Correct = "The email and password supplied is not correct";
+        public const string Password_Is_Missing = "Password is missing";
+        public const string Email_Is_Invalid = "Email is invalid";
 
         public LoginCommandHandler(IUserRepository userRepository, IEncryptor encryptor, IEmailValidator emailValidator, 
             ITokenService tokenService, IRefreshTokenRepository refreshTokenRepository)

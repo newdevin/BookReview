@@ -9,7 +9,7 @@ namespace Auth.Service.Commands
         private readonly IRefreshTokenRepository _refreshTokenRepository;
         private readonly ITokenService _tokenService;
 
-        private const string Invalid_Refresh_Token = "Invalid refresh token";
+        public const string Invalid_Refresh_Token = "Invalid refresh token";
 
         public RefreshTokenCommandHandler(IUserRepository userRepository, IRefreshTokenRepository refreshTokenRepository, ITokenService tokenService)
         {

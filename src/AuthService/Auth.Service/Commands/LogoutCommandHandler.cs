@@ -7,7 +7,7 @@ namespace Auth.Service.Commands
     {
         private readonly IUserRepository _userRepository;
         private readonly IRefreshTokenRepository _refreshTokenRepository;
-        private const string User_Invalid = "User is invalid";
+        public const string User_Invalid = "User is invalid";
 
         public LogoutCommandHandler(IUserRepository userRepository, IRefreshTokenRepository refreshTokenRepository)
         {
