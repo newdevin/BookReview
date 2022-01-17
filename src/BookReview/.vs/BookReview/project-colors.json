@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "874d8448-0c48-48f1-8c2e-5ab8c5bb37d1": {
+      "ProjectGuid": "874d8448-0c48-48f1-8c2e-5ab8c5bb37d1",
+      "DisplayName": "BookReview.WebApi",
+      "ColorIndex": 0
+    },
+    "fd8928b1-0219-45ef-a52b-61ae9463cf07": {
+      "ProjectGuid": "fd8928b1-0219-45ef-a52b-61ae9463cf07",
+      "DisplayName": "BookReview.IntegrationTests",
+      "ColorIndex": 1
+    },
+    "b222f768-3be2-43ca-900e-9b576b885535": {
+      "ProjectGuid": "b222f768-3be2-43ca-900e-9b576b885535",
+      "DisplayName": "BookReview.Database",
+      "ColorIndex": 2
+    },
+    "0334715a-2a32-4a02-b0c6-6d1b9af0fe74": {
+      "ProjectGuid": "0334715a-2a32-4a02-b0c6-6d1b9af0fe74",
+      "DisplayName": "BookReview.Service",
+      "ColorIndex": 3
+    },
+    "6e1093d7-ed83-4498-8a5e-26c1846a603f": {
+      "ProjectGuid": "6e1093d7-ed83-4498-8a5e-26c1846a603f",
+      "DisplayName": "BookReview.Console",
+      "ColorIndex": 4
+    },
+    "35a13bf4-8f8e-40ae-a54d-eae4f46671f3": {
+      "ProjectGuid": "35a13bf4-8f8e-40ae-a54d-eae4f46671f3",
+      "DisplayName": "BookReview.Repository",
+      "ColorIndex": 5
+    },
+    "354b8ac3-955f-4527-b842-6bbc3951cbdc": {
+      "ProjectGuid": "354b8ac3-955f-4527-b842-6bbc3951cbdc",
+      "DisplayName": "BookReview.Service.Tests",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "01fea9cf-8eee-4dc3-b2a3-50fe0ef541a6": {
+      "ProjectGuid": "01fea9cf-8eee-4dc3-b2a3-50fe0ef541a6",
+      "DisplayName": "BookReview.Domain",
+      "ColorIndex": 7
+    },
+    "fb85c7d7-e248-4d37-97e1-ea326360b489": {
+      "ProjectGuid": "fb85c7d7-e248-4d37-97e1-ea326360b489",
+      "DisplayName": "BookReview.Domain.Tests",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

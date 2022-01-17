@@ -1,0 +1,15 @@
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\bin\Debug\net6.0\BookReview.Service.deps.json
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\bin\Debug\net6.0\BookReview.Service.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\bin\Debug\net6.0\ref\BookReview.Service.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\bin\Debug\net6.0\BookReview.Service.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\bin\Debug\net6.0\BookReview.Domain.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\bin\Debug\net6.0\BookReview.Domain.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.csproj.AssemblyReference.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.AssemblyInfoInputs.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.AssemblyInfo.cs
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.csproj.CoreCompileInputs.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.csproj.CopyComplete
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\ref\BookReview.Service.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Service\obj\Debug\net6.0\BookReview.Service.pdb

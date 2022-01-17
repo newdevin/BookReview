@@ -1,0 +1,12 @@
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\bin\Debug\Auth.Database.dacpac
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\bin\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\bin\Debug\Auth.Database.pdb
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Auth.Database.sqlproj.AssemblyReference.cache
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\AuthService\src\AuthService\Auth.Database\obj\Debug\Auth.Database.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\bin\Debug\Auth.Database.dacpac
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\bin\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\bin\Debug\Auth.Database.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\Auth.Database.sqlproj.AssemblyReference.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\Auth.Database.pdb

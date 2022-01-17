@@ -1,0 +1,14 @@
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\bin\Debug\BookReview.Database.dacpac
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\bin\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\bin\Debug\Auth.Database.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\Model.xml
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\refactor.xml
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\postdeploy.sql
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\predeploy.sql
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\Auth.Database\obj\Debug\Auth.Database.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Database\bin\Debug\BookReview.Database.dacpac
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Database\bin\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Database\bin\Debug\Auth.Database.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Database\obj\Debug\Auth.Database.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Database\obj\Debug\Auth.Database.pdb

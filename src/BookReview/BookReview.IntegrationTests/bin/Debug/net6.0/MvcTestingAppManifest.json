@@ -1,0 +1,6 @@
+{
+  "BookReview.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\BookReview\\src\\BookReview\\BookReview.Domain",
+  "BookReview.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\BookReview\\src\\BookReview\\BookReview.Repository",
+  "BookReview.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\BookReview\\src\\BookReview\\BookReview.Service",
+  "BookReview.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dev\\Source\\Repos\\BookReview\\src\\BookReview\\BookReview.WebApi"
+}

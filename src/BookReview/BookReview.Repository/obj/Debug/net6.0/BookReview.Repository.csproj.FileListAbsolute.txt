@@ -1,0 +1,17 @@
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Repository.deps.json
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Repository.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\ref\BookReview.Repository.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Repository.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Domain.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Service.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Domain.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\bin\Debug\net6.0\BookReview.Service.pdb
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.csproj.AssemblyReference.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.AssemblyInfoInputs.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.AssemblyInfo.cs
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.csproj.CopyComplete
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\ref\BookReview.Repository.dll
+C:\Users\Dev\Source\Repos\BookReview\src\BookReview\BookReview.Repository\obj\Debug\net6.0\BookReview.Repository.pdb

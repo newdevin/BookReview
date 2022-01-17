@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "01fea9cf-8eee-4dc3-b2a3-50fe0ef541a6": {
+      "ProjectGuid": "01fea9cf-8eee-4dc3-b2a3-50fe0ef541a6",
+      "DisplayName": "Auth.Domain",
+      "ColorIndex": 0
+    },
+    "9cbae35a-4e07-422e-ad17-e8284977971d": {
+      "ProjectGuid": "9cbae35a-4e07-422e-ad17-e8284977971d",
+      "DisplayName": "Auth.Web",
+      "ColorIndex": 1
+    },
+    "354b8ac3-955f-4527-b842-6bbc3951cbdc": {
+      "ProjectGuid": "354b8ac3-955f-4527-b842-6bbc3951cbdc",
+      "DisplayName": "Auth.Service.Tests",
+      "ColorIndex": 2
+    },
+    "0334715a-2a32-4a02-b0c6-6d1b9af0fe74": {
+      "ProjectGuid": "0334715a-2a32-4a02-b0c6-6d1b9af0fe74",
+      "DisplayName": "Auth.Service",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "874d8448-0c48-48f1-8c2e-5ab8c5bb37d1": {
+      "ProjectGuid": "874d8448-0c48-48f1-8c2e-5ab8c5bb37d1",
+      "DisplayName": "Auth.WebApi",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
